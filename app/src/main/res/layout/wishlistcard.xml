@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/llrow"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="11dp"
+            android:background="#FAFAFA">
+
+
+            <ImageView
+                android:id="@+id/prodimage"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="80dp"
+                android:textColor="@color/black"
+                app:srcCompat="@drawable/diaper" />
+
+            <TextView
+                android:id="@+id/prodtname"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rajdhani_semibold"
+                android:textSize="18dp"
+                android:text="MamyPoko Pants" />
+
+            <TextView
+                android:id="@+id/prodcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rajdhani_semibold"
+                android:textSize="18dp"
+                android:text="DESCRIPTION" />
+
+            <TextView
+                android:id="@+id/prdprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/rajdhani_semibold"
+                android:textSize="18dp"
+                android:text="Rs. 200" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

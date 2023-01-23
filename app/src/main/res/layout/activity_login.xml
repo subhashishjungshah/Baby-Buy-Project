@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acitivity.LoginActivity"
+    android:background="@drawable/bglogin">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/courgette"
+        android:text="@string/greeting"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.1">
+
+        <EditText
+            android:id="@+id/emailtextbox"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:background="@drawable/emailstyle"
+            android:ems="10"
+            android:hint="@string/username"
+            android:textColorHint="@color/grey"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/passwordtextbox"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:background="@drawable/passstyle"
+            android:ems="10"
+            android:hint="@string/password"
+            android:textColorHint="@color/grey"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:background="@drawable/loginbtnstyle"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/registerlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or sign in with"
+        android:textSize="16sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerlink"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="182dp"
+        android:layout_height="138dp"
+        android:contentDescription="google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/babybuylogo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="319dp"
+        android:layout_height="59dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton"
+        app:layout_constraintVertical_bias="0.061">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:buttonTint="@color/black"
+            android:text="Remember Me"
+            android:textColor="@color/pink"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:text="Forget Password?"
+            android:textColor="@color/pink"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="72dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.317"
+        app:srcCompat="@drawable/goggle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

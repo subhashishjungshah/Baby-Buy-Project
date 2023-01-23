@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btnnav_home"
+        android:title="HOME"
+        android:icon="@drawable/ic_homeicon"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/wishlist"
+        android:title="WISHLIST"
+        android:icon="@drawable/ic_wishlist"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/holder"
+        android:title=""
+        app:showAsAction="ifRoom"
+        android:enabled="false"
+        />
+    <item
+        android:id="@+id/btnnav_list"
+        android:title="Purchase"
+        android:icon="@drawable/ic_checklist"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="PROFILE"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

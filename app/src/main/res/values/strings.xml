@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Babybuy</string>
+    <string name="greeting">Welcome back to Baby Buy</string>
+    <string name="username">Username or Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOG IN</string>
+    <string name="register">Don\'t Have an Account? SIGN UP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_baby_buy_map">BabyBuyMap</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_item_map">ItemMap</string>
+</resources>
